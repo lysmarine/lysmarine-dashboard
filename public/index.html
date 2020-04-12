@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lysmarine dashboard</title>
+    <link rel="stylesheet" href="/LMdashboard/public/style.css">
+    <script src="/LMdashboard/public/jquery.js"></script>
+    <script src="/LMdashboard/public/js.js"></script>
+</head>
+<body>
+
+
+
+    <div class="menuContainer">
+        <div class="menu-elem-container">
+            <a href="#" id="btn-instrumentpanel" class="menu-elem">
+                instrumentpanel
+            </a>
+        </div>
+        <div class="menu-elem-container">
+            <a href="#" id="btn-freeboard" class="menu-elem">
+                freeboard-sk
+            </a>
+        </div>
+        <div class="menu-elem-container">
+            <a href="#" id="btn-speedsample" class="menu-elem">
+                SpeedSample
+            </a>
+        </div>
+        <div class="menu-elem-container">
+            <a href="#" id="btn-pypilot" class="menu-elem">
+                PyPilot Control
+            </a>
+        </div>
+        <div class="menu-elem-container">
+            <a href="#" id="btn-skadmin" class="menu-elem">
+                SignalK Admin
+            </a>
+        </div>
+        <div class="menu-footer">
+            <a href="#" class="menuHandle">^</a>
+        </div>
+
+    </div>
+
+
+
+    <div class="menuHandle">Menu</div>
+
+
+
+    <iframe  id="frame-instrumentpanel" src="http://localhost:3000/@signalk/instrumentpanel/"></iframe>
+    <iframe  id="frame-freeboard"       src="http://localhost:81/@signalk/freeboard-sk/"></iframe>
+    <iframe  id="frame-speedsample"     src="http://localhost:4998"></iframe>
+    <iframe  id="frame-pypilot"         src="http://localhost:8080"></iframe>
+    <iframe  id="frame-skadmin"         src="http://localhost/admin/"></iframe>
+    <iframe  id="frame-gauages"         src="http://localhost:80/admin/"></iframe>
+
+
+
+</body>
+</html>

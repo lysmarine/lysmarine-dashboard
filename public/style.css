@@ -10,7 +10,6 @@ body{
     margin:0px;
     padding:0px;
     background-color: black;
-    background-image: url("/LMdashboard/public/background.png ");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -31,7 +30,7 @@ iframe{
 }
 
 div.menuHandle{
-    background-image: linear-gradient(#242424, #181818);
+    background-image: linear-gradient( #181818,#5e5e5e);
     color: #d9d9d9;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -41,6 +40,10 @@ div.menuHandle{
     padding:5px 20px;
     min-width: 60px;
     text-align: center;
+    border: 1px solid #393939;
+    border-top: 0px;
+    font-weight: bolder;
+
 }
 a.menuHandle{
     padding:5px 20px;
@@ -52,11 +55,14 @@ a.menuHandle{
 }
 
 div.menu-footer{
+    text-align: center;
+    display: block;
     color: #d9d9d9;
     position: absolute;
-    left: 40%;
     padding:5px 20px;
     bottom:0px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 
@@ -66,19 +72,21 @@ div.menuContainer{
     width:100%;
     height:100%;
     position: relative;
-    background-color: #242424;
-    padding-left:10%;
-    padding-right:10%;
+    background-color: black;
+    background-image: linear-gradient( #181818,rgba(0, 0, 0, 0.738) 19%, rgba(0, 0, 0, 0.541) 34%, rgba(0, 0, 0, 0.382) 47%, rgba(0, 0, 0, 0.278) 56.5%, rgba(0, 0, 0, 0.194) 65%, rgba(0, 0, 0, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(0, 0, 0, 0.042) 86.1%, rgba(0, 0, 0, 0.021) 91%, rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.002) 98.2%, transparent 100%);
     height:100%;
-
+    backdrop-filter: blur(2px);
 }
 
 div.menuContainer div.menu-elem-container{
-    width:26.5%;
     display: inline-block;
+    display: none;
 }
 
+
+
 div.menuContainer div.menu-elem-container a.menu-elem{
+
     border:1px solid #ffffff14;;
     background-color: #8080801c;
     margin:20px;
@@ -90,3 +98,10 @@ div.menuContainer div.menu-elem-container a.menu-elem{
 }
 
 
+div.menuContainer div.menu-elem-container a.menu-elem:hover,
+div.menuContainer div.menu-elem-container a.menu-elem:focus {
+    font-weight: bolder;
+    box-shadow: 0px 6px 22px 0px rgba(60, 56, 56, 0.75);
+    transition: transform 1s;
+
+}

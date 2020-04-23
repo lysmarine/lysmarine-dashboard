@@ -1,11 +1,12 @@
 jQuery(document).ready(function(){
+    jQuery('.menu-elem-container').slideDown('slow')
 
     //Open and close the menu from the handle.
     jQuery('.menuHandle').on('click',function(e){
         jQuery('.menuContainer').slideToggle('fast');
         // lnk = jQuery(this).attr('iloc');
         // console.log(lnk);
-        //
+
         // jQuery('iframe').attr('src',lnk)
     });
 

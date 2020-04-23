@@ -16,7 +16,12 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "jquery": "^3.4.1"
+    "express-static": "^1.2.6",
+    "jquery": "^3.5.0"
   },
-  "signalk-plugin-enabled-by-default": true
+  "signalk-plugin-enabled-by-default": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lysmarine/lysmarine-dashboard.git"
+  }
 }

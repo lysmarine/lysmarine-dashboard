@@ -8,7 +8,7 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-const express = require('express');
+const expressStatic = require("express-static");
 // https://github.com/SignalK/signalk-server-node/blob/master/SERVERPLUGINS.md
 
 module.exports = function(app) {
@@ -29,8 +29,8 @@ module.exports = function(app) {
         app.set('etag', false);
         app.debug("Register...");
         app.use('/LMdashboard/public',[
-            express.static(__dirname +'/public/',{etag: false}),
-            express.static(__dirname + '/node_modules/jquery/dist/',{etag: false})
+            expressStatic(__dirname +'/public/',{etag: false}),
+            expressStatic(__dirname + '/node_modules/jquery/dist/',{etag: false})
         ]);
 
         app.use('/LMdashboard', (req, res) => {

@@ -4,63 +4,82 @@
 
     <meta charset="utf-8">
     <title>Lysmarine dashboard</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
      <script src="/LMdashboard/public/jquery.js"></script>
+
+    <script src="/LMdashboard/public/bootstrap.min.js"></script>
+    <script src="/LMdashboard/public/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/LMdashboard/public/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/LMdashboard/public/bootstrap.min.css">
+    <link rel="stylesheet" href="/LMdashboard/public/bootstrap-grid.min.css">
+
+
     <link rel="stylesheet" href="/LMdashboard/public/style.css">
     <script src="/LMdashboard/public/js.js"></script>
 
 </head>
 <body>
     <div class="menuContainer">
-
-        <div class="ui-grid-d my-breakpoint">
-            <div class="ui-block-a my-breakpoint">
-                <div class="menu-elem-container">
-                    <a href="#" id="btn-instrumentpanel" class="menu-elem">
-                        Instrumentpanel
-                    </a>
-                </div>
+<div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-elem-container">
+                <a href="#" id="btn-instrumentpanel" class="menu-elem">
+                    <img src="/LMdashboard/public/icons/118-browser.png" class="center">
+                    <hr>
+                    Instrument panel
+                </a>
             </div>
-            <div class="ui-block-b my-breakpoint">
-                <div class="menu-elem-container">
-                    <a href="#" id="btn-freeboard" class="menu-elem">
-                        Freeboard-sk
-                    </a>
-                </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-elem-container">
+                <a href="#" id="btn-kip" class="menu-elem">
+                    <img src="/LMdashboard/public/icons/118-browser.png" class="center">
+                    <hr>
+                    Kip Gauge Panel
+                </a>
             </div>
-            <div class="ui-block-c my-breakpoint">
-                <div class="menu-elem-container">
-                    <a href="#" id="btn-speedsample" class="menu-elem">
-                        SpeedSample
-                    </a>
-                </div>
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-elem-container">
+                <a href="#" id="btn-freeboard" class="menu-elem">
+                    <img src="/LMdashboard/public/icons/074-map-10.png" class="center">
+                    <hr>
+                    Freeboard-sk Charts
+                </a>
             </div>
-            <div class="ui-block-d my-breakpoint">
+        </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-elem-container">
+                <a href="#" id="btn-speedsample" class="menu-elem">
+                    <img src="/LMdashboard/public/icons/022-route.png" class="center">
+                    <hr>
+                    SpeedSample tool
+                </a>
+            </div>
+        </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="menu-elem-container">
                     <a href="#" id="btn-pypilot" class="menu-elem">
+                        <img src="/LMdashboard/public/icons/070-pin-13.png" class="center">
+                        <hr>
                         PyPilot Control
                     </a>
                 </div>
             </div>
 
-            <div class="ui-block-e my-breakpoint">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="menu-elem-container">
                     <a href="#" id="btn-skadmin" class="menu-elem">
-                        SignalK Admin
-                    </a>
-                </div>
-            </div>
-            <div class="ui-block-b my-breakpoint">
-                <div class="menu-elem-container">
-                    <a href="#" id="btn-simplegauges" class="menu-elem">
-                        Simple Gauges
+                        <img src="/LMdashboard/public/icons/104-shop-1.png" class="center">
+                        <hr>
+                        SignalK webapps
                     </a>
                 </div>
             </div>
 
 
         </div>
-
+</div>
 
 
 
@@ -80,13 +99,11 @@
 
 
     <iframe  id="frame-instrumentpanel" src=":80/@signalk/instrumentpanel/"></iframe>
+    <iframe  id="frame-kip"             src=":80/@mxtommy/kip/#"></iframe>
     <iframe  id="frame-freeboard"       src=":80/@signalk/freeboard-sk/"></iframe>
     <iframe  id="frame-speedsample"     src=":4998/"></iframe>
     <iframe  id="frame-pypilot"         src=":8080/"></iframe>
-    <iframe  id="frame-skadmin"         src=":80/admin/"></iframe>
-    <iframe  id="frame-simplegauges"    src=":80/@signalk/simplegauges/"></iframe>
-
-
+    <iframe  id="frame-skadmin"         src=":80/admin/#/webapps"></iframe>
 
 </body>
 </html>

@@ -21,6 +21,7 @@ a{
     text-decoration: inherit;
     color: inherit;
     cursor: auto;
+
 }
 
 iframe{
@@ -74,14 +75,15 @@ div.menu-footer{
 div.menuContainer{
     width:100%;
     height:100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     height:100%;
+    padding:3%;
 }
 
 
 div.menuContainer div.menu-elem-container{
-    display: inline-block;
-    display: none;
+    /*display: inline-block;*/
+    /*display: none;*/
 }
 
 
@@ -102,6 +104,9 @@ div.menuContainer div.menu-elem-container a.menu-elem{
     color:white;
 }
 
+div.menuContainer div.menu-elem-container a.menu-elem img{
+    width:50%
+}
 
 div.menuContainer div.menu-elem-container a.menu-elem:hover,
 div.menuContainer div.menu-elem-container a.menu-elem:focus {
@@ -109,7 +114,6 @@ div.menuContainer div.menu-elem-container a.menu-elem:focus {
     font-weight: bolder;
     box-shadow: 0px 6px 22px 0px rgba(60, 56, 56, 0.75);
     transition: transform 1s;
-
 }
 
 

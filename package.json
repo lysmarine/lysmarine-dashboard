@@ -17,7 +17,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-static": "^1.2.6",
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "signalk-server": "^1.35.1"
   },
   "signalk-plugin-enabled-by-default": true,
   "repository": {

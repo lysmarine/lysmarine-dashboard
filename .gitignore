@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# On dev env one might install signalk-server under the project root
+signalk-server-node

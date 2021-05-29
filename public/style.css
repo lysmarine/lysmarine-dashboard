@@ -3,7 +3,7 @@ html,
 body{
     height:100%;
     overflow: hidden;
-    background-image: url("/LMdashboard/public/background.png");
+    background-image: url("/LMdashboard/image/background.png");
     background-size: cover;
     font-size: 1.2em;
 }
@@ -101,3 +101,19 @@ div.menuContainer div.menu-elem-container a.menu-elem:focus {
 }
 
 
+/*V2*/
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: center;
+
+    width: 100%;
+}
+
+.menuItem {
+    padding:20px;
+    flex-grow:1;
+}

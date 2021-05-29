@@ -6,7 +6,7 @@ __todo__
 
 # Development Install
 
-Install a local copy of signalk in your favorite folder (project folder in this example): 
+Before, you need a local copy of signalk in your favorite folder (project folder in this example): 
 
 ```
 git clone https://github.com/SignalK/signalk-server-node.git
@@ -26,5 +26,9 @@ Start signalk server.
 cd signalk-server-node
 bin/nmea-from-file
 ```
+
+Or as a stand alone 
+nodemon app.js
+
 
 The plugin should be available the at the address`http://localhost:3000/LMdashboard/`

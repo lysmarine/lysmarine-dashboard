@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Frederic Guilbault http://lysmarineos.com
+ * Copyright 2020,2023 Frederic Guilbault http://lysmarineos.com
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -10,6 +10,7 @@
  */
 
 const expressStatic = require("express-static");
+var path = require('path');
 // https://github.com/SignalK/signalk-server-node/blob/master/SERVERPLUGINS.md
 
 module.exports = function(app) {
